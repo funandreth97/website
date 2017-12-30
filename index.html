@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andres Caraballo | Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Andres Caraballo" property="og:title">
+    <meta name="description" content="desc">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta content="" property="og:description">
+    <meta content="" property="og:url">
+    <meta content="" property="og:image">
+    <meta content="" property="og:image:url">
+    <meta content="image/png" property="og:image:type">
+    <meta content="website" property="og:type">
+    <meta content="" property="og:site_name">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/356992256919470080/395634765417545729/Untitled-1.png">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left">
+        <a href="/"><img src="images/logo.svg" class="logo" alt="Andy C. Logo"></a>
+      </div>
+      <div class="right">
+        <a href="/" class="link active">Home</a>
+        <a href="portfolio" class="link">Portfolio</a>
+        <a href="contact" class="link">Contact</a>
+      </div>
+      <center class="toggle-nav"><i class="fa fa-bars bar" onclick="toggleNav()"></i></center>
+    </div>
+    <div class="full-nav" style="visibility:hidden">
+      <a href="/" class="link">Home</a>
+      <a href="portfolio" class="link">Portfolio</a>
+      <a href="contact" class="link">Contact</a>
+    </div>
+    <div class="section home">
+      <div class="main">
+        <img src="images/avatar.png" alt="Andy C." class="avatar">
+        <div class="text-group">
+          <div class="title"><span>Hey</span>, I'm Andy.</div>
+          <div class="text">I've been coding since I was 9 years old. My passion for web development is amazing, and I just love making webpages to help people and enterprises increase their customer count, as well as their professional look!</div>
+        </div>
+      </div>
+    </div>
+    <div class="section features" id="after-home">
+      <div class="section-title">Features</div>
+      <div class="main">
+        <div class="feature" data-aos="fade-in" data-aos-once="true">
+          <i class="fa fa-bolt icon"></i>
+          <div class="title">Fast Services</div>
+          <div class="text">Your pages will be delivered in no time with my custom themes.</div>
+        </div>
+        <div class="feature" data-aos="fade-in" data-aos-once="true">
+          <i class="fa fa-cloud icon"></i>
+          <div class="title">Cloud Backups</div>
+          <div class="text">I backup your page everyday, so the progress never gets lost.</div>
+        </div>
+        <div class="feature" data-aos="fade-in" data-aos-once="true">
+          <i class="fa fa-signal icon"></i>
+          <div class="title">SEO</div>
+          <div class="text">Search Engines will find your webpage with ease using my system.</div>
+        </div>
+        <div class="feature" data-aos="fade-in" data-aos-once="true">
+          <i class="fa fa-chart-pie icon"></i>
+          <div class="title">Analytics</div>
+          <div class="text">I structure my work by sending you and/or your enterprise details.</div>
+        </div>
+      </div>
+    </div>
+    <div class="section pricing offset">
+      <div class="section-title">Pricing</div>
+      <div class="main">
+        <div class="product" data-aos="fade-in" data-aos-once="true">
+          <img src="https://image.flaticon.com/icons/svg/174/174881.svg" alt="Basic Wordpress" class="icon">
+          <div class="title">Basic Wordpress</div>
+          <div class="price"><span>$44.99</span></div>
+          <div class="info">A great website for all needs! Includes a blog system and a basic template design. Has a watermark at the footer.</div>
+        </div>
+        <div class="product" data-aos="fade-in" data-aos-once="true">
+          <img src="https://image.flaticon.com/icons/svg/270/270832.svg" alt="Advanced Wordpress" class="icon">
+          <div class="title">Advanced Wordpress</div>
+          <div class="price"><span>$74.99</span></div>
+          <div class="info">An amazing website for professional servers/networks. Includes a blog system, official plugins and a fully-customizable site. No watermarks if requested.</div>
+        </div>
+        <div class="product" data-aos="fade-in" data-aos-once="true">
+          <img src="https://image.flaticon.com/icons/svg/140/140830.svg" alt="Back-End Development" class="icon">
+          <div class="title">Back-End Development</div>
+          <div class="price">Starting at <span>$10</span></div>
+          <div class="info">Need some Java, C#, PHP or Rails coded? This is your option.</div>
+        </div>
+      </div>
+      <div class="custom-req" data-aos="fade-in" data-aos-once="true"><span>Is</span> what you need not listed here? <span>Contact</span> me and I'll be sure to make you a special quote. <a href="contact" class="btn">Contact Me</a></div>
+    </div>
+    <div class="section partners">
+      <div class="section-title">Partners</div>
+      <div class="main">
+        <a href="https://coreydonenfeld.com" target="_blank" class="partner corey" data-aos="fade-in" data-aos-once="true">
+          <img src="https://coreydonenfeld.com/images/logo.svg" alt="Corey Donenfeld" class="logo">
+          <div class="title">Corey Donenfeld</div>
+          <div class="info">Corey is a web designer and ui/ux designer. My mate, best designs at an awesome price.</div>
+        </a>
+        <a href="https://zerolag.host/" target="_blank" class="partner zerolag" data-aos="fade-in" data-aos-once="true">
+          <img src="https://zerolag.host/templates/ZeroLag/html/img/logo.png" alt="ZeroLag" class="logo">
+          <div class="title">ZeroLag</div>
+          <div class="info">The best of the best in hosting solutions! Need an awesome server? Well, ZeroLag offers Dedicated, Minecraft and Web Servers for you!</div>
+        </a>
+        <a href="https://enigmaprison.net/wp/" target="_blank" class="partner enigmaprison" data-aos="fade-in" data-aos-once="true">
+          <img src="https://cdn.discordapp.com/attachments/356992256919470080/395622489704890382/favicon.png" alt="EnigmaPrison" class="logo">
+          <div class="title">EnigmaPrison</div>
+          <div class="info">A lovely minecraft server, actually, this is Minecraft's most enigmatic prison server!</div>
+        </a>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="left" data-aos="fade-right" data-aos-once="true">Prices starting at <span>$10</span>. What are you waiting for?</div>
+      <div class="right" data-aos="fade-left" data-aos-once="true" data-aos-delay="500"><a href="contact" class="btn">Let's Get Started</a></div>
+    </div>
+    <script src="footer.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andres Caraballo | Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Andres Caraballo" property="og:title">
+    <meta name="description" content="desc">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta content="" property="og:description">
+    <meta content="" property="og:url">
+    <meta content="" property="og:image">
+    <meta content="" property="og:image:url">
+    <meta content="image/png" property="og:image:type">
+    <meta content="website" property="og:type">
+    <meta content="" property="og:site_name">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/356992256919470080/395634765417545729/Untitled-1.png">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left">
+        <a href="/"><img src="images/logo.svg" class="logo" alt="Andy C. Logo"></a>
+      </div>
+      <div class="right">
+        <a href="/" class="link">Home</a>
+        <a href="portfolio" class="link">Portfolio</a>
+        <a href="contact" class="link active">Contact</a>
+      </div>
+      <center class="toggle-nav"><i class="fa fa-bars bar" onclick="toggleNav()"></i></center>
+    </div>
+    <div class="full-nav" style="visibility:hidden">
+      <a href="/" class="link">Home</a>
+      <a href="portfolio" class="link">Portfolio</a>
+      <a href="contact" class="link">Contact</a>
+    </div>
+    <div class="section home other-home">
+      <div class="main">
+        <div class="text-group">
+          <div class="title">Contact</div>
+          <div class="text">let's get in touch.</div>
+        </div>
+      </div>
+    </div>
+    <div class="section contact">
+      <div class="section-title">Contact Form</div>
+      <div class="main">
+        <form action="/form.php" method="post" class="form">
+          <div class="first-row">
+            <div class="form-item">
+              <label>Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-item">
+              <label>Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>  
+            <div class="form-item">
+              <label>Discord (Optional)</label>
+              <input type="text" id="discord" name="discord" placeholder="Enter your discord username">
+            </div> 
+          </div>
+          <div class="item">
+            <div class="form-item">
+              <label>Message</label>
+              <input type="text" id="message" name="message" placeholder="Enter your message or order request">
+            </div> 
+          </div>
+          <div class="item submit-form">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="left" data-aos="fade-right" data-aos-once="true">Prices starting at <span>$10</span>. What are you waiting for?</div>
+      <div class="right" data-aos="fade-left" data-aos-once="true" data-aos-delay="500"><a href="contact" class="btn">Let's Get Started</a></div>
+    </div>
+    <script src="footer.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
